@@ -37,6 +37,20 @@ class _PageOneState extends State<PageOne>{
 const Text("Choose Your Mood:",
 style : TextStyle(fontSize:22 , fontWeight: FontWeight.bold)),
 const SizedBox(height :20),
+Row(
+  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+  children: [
+    moodButton ("😊"),
+    moodButton ("😢"),
+    moodButton ("😡"),
+
+  ],
+),
+const SizedBox(height:30),
+if (selectedMood !=null)
+Text("Slelected :$selectedMood",
+style: const TextStyle(fontSize: 28),
+),
 
         ],
       )
