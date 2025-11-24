@@ -22,3 +22,24 @@ class PageOne extends StatefulWidget {
   @override
   State<PageOne> createState() => _PageOneState();
 }
+class _PageOneState extends State<PageOne>{
+  String? selectedMood ;
+  @override Widget build(BuildContext context){
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text("Mood Selector - page 1"),
+        centerTitle: true,
+      ),
+      body: Padding(
+        padding: const EdgeInsets.all(20),
+      child: Column(
+        children: [
+const Text("Choose Your Mood:",
+style : TextStyle(fontSize:22 , fontWeight: FontWeight.bold)),
+const SizedBox(height :20),
+
+        ],
+      )
+    )
+  }
+}
